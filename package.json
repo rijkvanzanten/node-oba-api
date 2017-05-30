@@ -13,10 +13,16 @@
   "keywords": [
     "OBA"
   ],
+  "xo": {
+    "space": true
+  },
   "author": "Rijk van Zanten <rijkvanzanten@me.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rijkvanzanten/node-oba-api/issues"
   },
-  "homepage": "https://github.com/rijkvanzanten/node-oba-api#readme"
+  "homepage": "https://github.com/rijkvanzanten/node-oba-api#readme",
+  "devDependencies": {
+    "xo": "^0.18.2"
+  }
 }

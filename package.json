@@ -1,0 +1,22 @@
+{
+  "name": "oba-api",
+  "version": "1.0.0",
+  "description": "Package to be able to interface with OBA's API a little more easier in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rijkvanzanten/node-oba-api.git"
+  },
+  "keywords": [
+    "OBA"
+  ],
+  "author": "Rijk van Zanten <rijkvanzanten@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rijkvanzanten/node-oba-api/issues"
+  },
+  "homepage": "https://github.com/rijkvanzanten/node-oba-api#readme"
+}

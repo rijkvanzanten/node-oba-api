@@ -21,15 +21,13 @@ class OBA {
       const hostHeader = 'obaliquid.staging.aquabrowser.nl';
       const path = endpoint + '/';
       const sortedQuery = queryString.stringify(params);
-
       const id = acceptHeader + nl + date + nl + hostHeader + nl + path + nl + sortedQuery + nl;
 
       const hash = hmacsha1(this.secretKey, id);
 
       const result = btoa(hash);
 
-      axios.get(baseUrl + path, {
-        params,
+      axios.get(baseUrl + path + '/?' + sortedQuery, {
         headers: {
           'X-AquaBrowser-Date': date,
           Authorization: `AquaBrowser: ${this.publicKey};${result}`,

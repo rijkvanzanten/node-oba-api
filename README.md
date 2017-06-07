@@ -17,7 +17,7 @@ const OBA = require('oba-api');
 const client = new OBA({
   // ProQuest API Keys
   public: '1234567890',
-  private: '1234567890'
+  secret: '1234567890'
 });
 
 // General usage:

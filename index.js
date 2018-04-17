@@ -22,7 +22,7 @@ class OBA {
      *   (with the authorization) param
      */
 
-    const baseUrl = 'http://obaliquid.staging.aquabrowser.nl/api/v1/';
+    const baseUrl = 'https://zoeken.oba.nl/api/v1/';
     const path = endpoint + '/';
 
     return new Promise((resolve, reject) => {

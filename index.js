@@ -27,7 +27,7 @@ class OBA {
 
     return new Promise((resolve, reject) => {
       const sortedQuery = queryString.stringify(params);
-      axios.get(baseUrl + path + '/?authorization=' + this.publicKey + '&' + sortedQuery)
+      axios.get((params.baseUrl || baseUrl) + path + '/?authorization=' + this.publicKey + '&' + sortedQuery)
         .then(res => res.data)
         .then(xml => parser.toJson(xml))
         .then(res => resolve(res))
